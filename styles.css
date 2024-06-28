@@ -1,0 +1,69 @@
+/******w**************
+    
+    Assignment 4 Stylesheet
+    Name: Milan Cruz
+    Date: 28-06-2024
+    Description: Api Query for City of Winnipeg Building Permits
+
+*********************/
+
+
+:root {
+    --main-background-color: #D6EFFF; /* Light blue for overall page background */
+    --wrapper-background-color: #848F9A; /* Light gray for containers */
+    --text-color: #000; /* Black for text */
+    --border-color: #72195A;
+    --active-background-color: #f34213; /* Bright red for active elements */
+    --hover-background-color: #de9151; /* Light orange for hover states */
+    --item-background-color: #fff; /* White for item backgrounds */
+}
+
+/* Global body styles */
+body {
+    text-align: center;
+    background-color: var(--main-background-color); /* Using variable for main background */
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--wrapper-background-color); /* Using variable for container background */
+}
+
+/* Form layout styles */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+/* Styles for results section */
+.results {
+    margin-top: 20px;
+}
+
+/* Styles for each permit item in the results */
+.permit-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--item-background-color); /* Using variable for item background */
+}
+
+/* Styling for hover states on links or clickable items (if any) */
+a:hover {
+    background-color: var(--hover-background-color); /* Using variable for hover background */
+    color: var(--text-color); /* Ensuring text color is visible on hover */
+}
+
+/* Styling for active links or buttons (if applicable) */
+a:active, button:active {
+    background-color: var(--active-background-color); /* Using variable for active background */
+    color: var(--text-color);
+}

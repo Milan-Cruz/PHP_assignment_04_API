@@ -1,0 +1,49 @@
+<!-------w------------
+
+    Assignment 4
+    Name: Milan Cruz
+    Date: 28-06-2024
+    Description: Api Query for City of Winnipeg Building Permits
+
+--------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winnipeg Building Permits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Winnipeg<br>Building Permit Search</h1>
+        <form id="searchForm">
+            <label for="permitType">Permit Type:</label>
+            <input type="text" id="permitType" name="permitType"
+                placeholder="Permit type (e.g., multi, housing, personal)...">
+
+            <label for="orderBy">Order by Issue Date:</label>
+            <select id="orderBy" name="orderBy">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+
+            <label for="limit">Limit Results (1-100):</label>
+            <input type="number" id="limit" name="limit" min="1" max="100" placeholder="Leave blank for default">
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="results" class="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
